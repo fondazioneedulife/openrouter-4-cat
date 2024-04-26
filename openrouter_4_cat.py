@@ -1,12 +1,12 @@
 from typing import List, Optional, Type
-
 from cat.mad_hatter.decorators import tool, hook, plugin
 from pydantic import BaseModel, ConfigDict, SecretStr
 from datetime import datetime, date
 from cat.factory.llm import LLMSettings
-from langchain_anthropic import OpenAI
+from langchain_openai import OpenAI
 
 class OpenRouterConfig(LLMSettings):
+
     openrouter_api_key: Optional[SecretStr]
     openrouter_base_url: Optional[str]
     modelName: Optional[str]
