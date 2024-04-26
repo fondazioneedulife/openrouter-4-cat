@@ -14,7 +14,7 @@ The plugin allows Cheshire Cat AI language models to be extended through OpenRou
 4. Create the key and copy it
 5. Go into Cheshire's settings and choose OpenRouter.ai
 6. Complete the settings with:
-     a. api key
-     b. url path https://openrouter.ai/api/v1
-     c. choose a model from here https://openrouter.ai/models (for example mistralai/mistral-7b-instruct:free)
+   - api key
+   - url path https://openrouter.ai/api/v1
+   - choose a model from here https://openrouter.ai/models (for example mistralai/mistral-7b-instruct:free)
 
