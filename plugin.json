@@ -1,6 +1,7 @@
 {
     "name": "Openrouter 4 Cat",
     "version": "0.0.1",
+    "description": "Plugin for the cheshire-cat-ai framework that enables linkage with the SAAS service from https://openrouter.ai/.",
     "author_name": "antoniofaccioli",
     "author_url": "https://github.com/antoniofaccioli",
     "plugin_url": "https://github.com/fondazioneedulife/openrouter-4-cat",

@@ -7,12 +7,11 @@ from langchain_openai import OpenAI
 
 class OpenRouterConfig(LLMSettings):
 
-    openrouter_api_key: Optional[SecretStr]
-    openrouter_base_url: Optional[str]
-    modelName: Optional[str]
+    openai_api_key: Optional[SecretStr]
+    openai_api_base: Optional[str]
+    model: Optional[str]
     max_tokens: Optional[int] = 300
     temperature: Optional[float] = 0.7
-    streaming: Optional[bool] = True
 
     _pyclass: Type = OpenAI
 
