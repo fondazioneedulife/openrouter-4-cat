@@ -3,7 +3,7 @@ from cat.mad_hatter.decorators import tool, hook, plugin
 from pydantic import BaseModel, ConfigDict, SecretStr
 from datetime import datetime, date
 from cat.factory.llm import LLMSettings
-from langchain_openai import OpenAI
+from langchain.chat_models import ChatOpenAI as OpenRouter
 
 class OpenRouterConfig(LLMSettings):
 
@@ -13,7 +13,7 @@ class OpenRouterConfig(LLMSettings):
     max_tokens: Optional[int] = 300
     temperature: Optional[float] = 0.7
 
-    _pyclass: Type = OpenAI
+    _pyclass: Type = OpenRouter
 
     model_config = ConfigDict(
         json_schema_extra={
