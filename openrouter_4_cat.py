@@ -11,7 +11,8 @@ class OpenRouterConfig(LLMSettings):
     openai_api_base: Optional[str]
     model: Optional[str]
     max_tokens: Optional[int] = 300
-    temperature: Optional[float] = 0.7
+    temperature: Optional[float] = 0.1
+    streaming: bool = True
 
     _pyclass: Type = OpenRouter
 
